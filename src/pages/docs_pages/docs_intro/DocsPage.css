@@ -1,0 +1,20 @@
+.docs-page {
+    background-color: #1B1B1D;
+    color: white;
+    margin-top: 20px;
+}
+
+.sidebar {
+    background-color: #1B1B1D;
+    color: white;
+    width: 15%; /* Adjust the width as needed */
+    max-width: 300px; /* Optional: set a maximum width */;
+    border-right: 1px solid #444444;
+}
+
+.main-section {
+    background-color: #1B1B1D;
+    color: white;
+    width: 85%; /* Adjust the width as needed */
+}
+
