@@ -1,6 +1,7 @@
 export const sections = [
     {
         title: "Electronics",
+        description : "A complete guide in Electronics Fundamentals",
         topics: [
             {
                 title: "Theory",
@@ -19,10 +20,29 @@ export const sections = [
                     { title: "Transformers", link: "/docs/electronics/basic-electronic-circuit-components/transformers" },
                 ],
             },
+            {
+                title: "Semiconductors",
+                articles: [
+                    { title: "Semiconductor Technology", link: "/docs/electronics/semiconductors/semiconductor-technology" },
+                ],
+            },
+            {
+                title: "Optoelectronics",
+                articles: [
+                    { title: "A Lecture on Photons", link: "/docs/electronics/optoelectronics/a-lecture-of-photons" },
+                ],
+            },
+            {
+                title: "Sensors",
+                articles: [
+                    { title: "General Principals", link: "/docs/electronics/sensors/general-principals" },
+                ],
+            },
         ],
     },
     {
         title: "Kubernetes",
+        description : "General Kubernetes Knowledge",
         topics: [
             {
                 title: "Architecture",

@@ -26,11 +26,11 @@ function Layout() {
             <Container fluid className='docs-page'>
                 <Row>
                     {showSidebar && (
-                        <Col md={3} className='sidebar p-1'>
+                        <Col md={4} className='sidebar p-1'> {/* Adjusted column width */}
                             <Sidebar />
                         </Col>
                     )}
-                    <Col md={showSidebar ? 10 : 12} className="content">
+                    <Col md={showSidebar ? 8 : 12} className="content"> {/* Adjusted column width */}
                         <Routes>
                             <Route exact path="/" element={<HomePage />} />
                             <Route path="/docs/intro" element={<DocsPage />} />

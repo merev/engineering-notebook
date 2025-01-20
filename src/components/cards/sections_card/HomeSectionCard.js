@@ -13,7 +13,7 @@ const HomeSectionCard = () => {
                     <Card className='section-card'>
                         <Card.Img variant="top" src={section.image} className='section-card-image'/>
                             <Card.Body>
-                                <Card.Title className='section-title'>{section.title}</Card.Title>
+                                <Card.Title className='section-title-home'>{section.title}</Card.Title>
                                 <Card.Text>{section.description}</Card.Text>
                             </Card.Body>
                     
