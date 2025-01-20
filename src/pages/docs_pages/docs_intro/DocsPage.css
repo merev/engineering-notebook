@@ -1,20 +1,64 @@
-.docs-page {
-    background-color: #1B1B1D;
-    color: white;
-    margin-top: 20px;
-}
-
-.sidebar {
-    background-color: #1B1B1D;
-    color: white;
-    width: 15%; /* Adjust the width as needed */
-    max-width: 300px; /* Optional: set a maximum width */;
-    border-right: 1px solid #444444;
-}
-
 .main-section {
-    background-color: #1B1B1D;
-    color: white;
-    width: 85%; /* Adjust the width as needed */
+    margin: 0px;
+    padding: 20px 0px 0px 20px;
 }
 
+.article-card {
+    background-color: #1B1B1D;
+    color: #E0E0E0;
+    border: none;
+    margin-bottom: 30px;
+}
+
+.article-section {
+    margin: 40px 10px;
+}
+
+.article-title {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.article-heading {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.article-intro {
+    text-decoration: none;
+}
+
+.article-paragraph {
+    text-decoration: none;
+}
+
+.next-button:hover {
+    border-color: #0d6efd;
+}
+
+.next-button {
+    text-align: right;
+    border: 1px solid #E0E0E0;
+    background-color: #1B1B1D;
+    color: whitesmoke;
+    width: 45%;
+    margin-left: auto;
+    margin-right: 15px;
+}
+
+.navlink {
+    text-decoration: none;
+}
+
+.next-button-next {
+    padding: 10px 15px 0px 10px;
+    margin: 0px;
+    font-size: 14px;
+}
+
+.next-button-text {
+    padding: 0px 15px 10px 10px;
+    margin: 0px;
+    font-weight: bold;
+    color: #0d6efd;
+}

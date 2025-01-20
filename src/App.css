@@ -1,5 +1,6 @@
 .docs-page {
     padding: 0px 0px 0px 0px;
+    
 }
 
 html, body {
@@ -7,4 +8,11 @@ html, body {
     padding: 0;
     width: 100%;
     overflow-x: hidden;
+    background-color: #1B1B1D;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px 0px 0px;
 }

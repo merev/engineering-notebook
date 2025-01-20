@@ -1,6 +1,7 @@
 .sidebar-container {
     /* margin: 0px 0px 0px 0px; */
     padding: 7px 2px 0px 15px;
+    font-weight: bold;
 }
 
 .sidebar-introduction {

@@ -30,7 +30,7 @@ function Layout() {
                             <Sidebar />
                         </Col>
                     )}
-                    <Col md={showSidebar ? 9 : 12} className="content">
+                    <Col md={showSidebar ? 10 : 12} className="content">
                         <Routes>
                             <Route exact path="/" element={<HomePage />} />
                             <Route path="/docs/intro" element={<DocsPage />} />
