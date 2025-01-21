@@ -2,6 +2,8 @@
     /* margin: 0px 0px 0px 0px; */
     padding: 7px 2px 0px 15px;
     font-weight: bold;
+    max-height: 1000px;
+    overflow-y: auto;
 }
 
 .sidebar-introduction {

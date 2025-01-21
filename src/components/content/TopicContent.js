@@ -45,7 +45,7 @@ const TopicContent = () => {
                     <span className="current-page">{currentTopic.title}</span>
                 </div>
                 <Card.Title className="page-title">{currentTopic.title}</Card.Title>
-                <Card.Text>{`${currentTopic.articles.length} articles`}</Card.Text>
+                <Card.Text>{currentTopic.description}</Card.Text>
                 <div className="children-grid">
                     {currentTopic.articles.map((article, index) => (
                         <Nav.Link as={Link} to={article.link} key={index}>
