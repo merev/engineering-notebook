@@ -1,0 +1,51 @@
+/* Navigation Buttons (Previous & Next) */
+
+.navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 20px;
+}
+
+.prev-button:hover {
+    border-color: #0d6efd;
+}
+
+.prev-button {
+    text-align: left;
+    border: 1px solid #E0E0E0;
+    background-color: #1B1B1D;
+    color: whitesmoke;
+    /* padding: 5px 250px 5px 20px; */
+    padding-left: 10px;
+}
+
+.next-button:hover {
+    border-color: #0d6efd;
+}
+
+.next-button {
+    text-align: right;
+    border: 1px solid #E0E0E0;
+    background-color: #1B1B1D;
+    color: whitesmoke;
+    /* padding: 5px 20px 5px 250px; */
+    padding-right: 5px;
+}
+
+.navlink {
+    text-decoration: none;
+    width: 45%;
+}
+
+.button-name {
+    padding: 10px 15px 0px 10px;
+    margin: 0px;
+    font-size: 14px;
+}
+
+.button-direction {
+    padding: 0px 15px 10px 10px;
+    margin: 0px;
+    font-weight: bold;
+    color: #0d6efd;
+}

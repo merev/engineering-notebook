@@ -1,7 +1,7 @@
 export const sections = [
     {
         title: "Electronics",
-        description : "A complete guide in Electronics Fundamentals",
+        description : "A comprehensive guide to understanding the fundamentals of electronics, components, and advanced technologies.",
         topics: [
             {
                 title: "Theory",
@@ -42,7 +42,7 @@ export const sections = [
     },
     {
         title: "Kubernetes",
-        description : "General Kubernetes Knowledge",
+        description : "An overview of Kubernetes architecture, installation, and management for container orchestration.",
         topics: [
             {
                 title: "Architecture",
@@ -72,6 +72,7 @@ export const sections = [
     },
     {
         title: "Linux",
+        description : "A detailed exploration of the Linux operating system, including kernel, networking, and storage concepts.",
         topics: [
             {
                 title: "Overview",
@@ -101,6 +102,7 @@ export const sections = [
     },
     {
         title: "DevOps",
+        description : "A practical guide to DevOps tools and practices, including containers, automation, monitoring, and logging.",
         topics: [
             {
                 title: "Containers",

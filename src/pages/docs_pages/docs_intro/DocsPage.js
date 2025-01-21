@@ -1,8 +1,11 @@
 import React from 'react';
-import { Container, Row, Col, Card } from 'react-bootstrap';
+import { Container, Card, Nav } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHome } from '@fortawesome/free-solid-svg-icons';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './DocsPage.css';
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const DocsPage = () => {
 
@@ -10,6 +13,14 @@ const DocsPage = () => {
         <Container fluid className='main-section'>
             <Card className='article-card'>
                 <Card.Body>
+                <div className="breadcrumbs">
+                    <Nav.Link as={Link} to="/" className="home-link">
+                    <FontAwesomeIcon icon={faHome} />
+                    </Nav.Link>
+                    <span className='arrows'> › </span>
+                    <span className='current-page'>Introduction</span>
+                </div>
+
                     <div>
                     <Card.Title className='article-title'>Introduction</Card.Title>
                     <Card.Text className='article-intro'>This blog is a comprehensive resource for IT professionals, enthusiasts, and learners seeking to deepen their technical expertise. Focused on education and practical knowledge, it provides well-structured articles, tutorials, and documentation on key areas of IT engineering. The goal is to simplify complex topics, share valuable insights, and offer actionable resources that empower readers to excel in fields like Electronics, Kubernetes, Linux, and DevOps.</Card.Text>
@@ -43,12 +54,14 @@ const DocsPage = () => {
                     </Card.Text>
                     </div>
 
-                    <NavLink as={Link} to="/docs/electronics" className='navlink'>
+                    <div className="navigation-buttons">
+                    <NavLink as={Link} to="/docs/electronics" className='navlink m-auto'>
                         <Card className="next-button">
-                        <Card.Text className='next-button-next'>Next</Card.Text>
-                        <Card.Text className='next-button-text'>Electronics »</Card.Text>
+                        <Card.Text className='button-name'>Next</Card.Text>
+                        <Card.Text className='button-direction'>Electronics »</Card.Text>
                         </Card>
                     </NavLink>
+                    </div>
                 </Card.Body>
             </Card>
         </Container>

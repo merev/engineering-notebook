@@ -1,14 +1,14 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import TopicContent from '../../../../components/content/TopicContent';
+import SectionContent from '../../../components/content/SectionContent';
 
-const ElectronicsTheoryPage = () => {
+const LinuxSectionPage = () => {
     return (
         <Container fluid className='main-section'>
-            <TopicContent />
+            <SectionContent />
         </Container>
     );
 };
 
-export default ElectronicsTheoryPage;
+export default LinuxSectionPage;

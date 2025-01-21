@@ -1,6 +1,6 @@
 .main-section {
     margin: 20px 0px 0px 100px;
-    padding: 20px 0px 0px 0px;
+    padding: 5px 0px 0px 0px;
 }
 
 .article-card {
@@ -30,35 +30,4 @@
 
 .article-paragraph {
     text-decoration: none;
-}
-
-.next-button:hover {
-    border-color: #0d6efd;
-}
-
-.next-button {
-    text-align: right;
-    border: 1px solid #E0E0E0;
-    background-color: #1B1B1D;
-    color: whitesmoke;
-    width: 45%;
-    margin-left: auto;
-    margin-right: 15px;
-}
-
-.navlink {
-    text-decoration: none;
-}
-
-.next-button-next {
-    padding: 10px 15px 0px 10px;
-    margin: 0px;
-    font-size: 14px;
-}
-
-.next-button-text {
-    padding: 0px 15px 10px 10px;
-    margin: 0px;
-    font-weight: bold;
-    color: #0d6efd;
 }
