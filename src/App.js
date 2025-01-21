@@ -2,16 +2,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import { Col, Container, Row } from 'react-bootstrap';
-import Header from './components/header/Header';
-import Footer from './components/footer/Footer';
-import Sidebar from './components/sidebar/Sidebar';
-import HomePage from './pages/home_page/HomePage';
-import DocsPage from './pages/docs_pages/docs_intro/DocsPage';
-import SearchPage from './pages/SearchPage';
-import ElectronicsSectionPage from './pages/docs_pages/electronics_section/ElectronicsSectionPage';
-import KubernetesSectionPage from './pages/docs_pages/kubernetes_section/KubernetesSectionPage';
-import ElectronicsTheoryPage from './pages/docs_pages/electronics_section/electronics_theory/ElectronicsTheoryPage';
-import CurrentPage from './pages/docs_pages/electronics_section/electronics_theory/CurrentPage';
+import { Header, Footer, Sidebar } from './components';
+import { HomePage, DocsPage, SearchPage, ElectronicsSectionPage, KubernetesSectionPage, ElectronicsTheoryPage, CurrentPage } from './pages';
 import './App.css';
 
 function Layout() {
