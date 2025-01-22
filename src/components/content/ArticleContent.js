@@ -8,7 +8,7 @@ import { sections } from '../sidebar/SidebarContent';
 import './Content.css';
 import { PrevAndNextNavButtons } from '../nav_buttons/PrevAndNextButtons';
 
-const ArticleContent = () => {
+export const ArticleContent = () => {
     const location = useLocation();
     const currentPath = location.pathname;
 
@@ -34,17 +34,15 @@ const ArticleContent = () => {
     const [markdownContent, setMarkdownContent] = useState('');
     const [error, setError] = useState(null);
 
-    // Fetch Markdown content from GitHub
+    // Fetch Markdown content from the local file system
     useEffect(() => {
         if (currentArticle) {
-            const githubRawUrl = `https://raw.githubusercontent.com/merev/engineering-notebook/main/${currentArticle.title
-                .toLowerCase()
-                .replace(/ /g, '-')}.md`;
+            const localFilePath = `/articles/${currentArticle.title.toLowerCase().replace(/ /g, '-')}.md`;
 
-            fetch(githubRawUrl)
+            fetch(localFilePath)
                 .then(response => {
                     if (!response.ok) {
-                        throw new Error(`Failed to fetch content: ${response.statusText}`);
+                        throw new Error(`Failed to load content: ${response.statusText}`);
                     }
                     return response.text();
                 })
