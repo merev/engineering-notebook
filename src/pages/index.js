@@ -9,4 +9,4 @@ export { default as DevOpsSectionPage } from './docs_pages/devops_section/DevOps
 
 
 export { default as ElectronicsTheoryPage } from './docs_pages/electronics_section/electronics_theory/ElectronicsTheoryPage';
-export { default as CurrentPage } from './docs_pages/electronics_section/electronics_theory/CurrentPage';
+export { default as ElectricCurrentPage } from './docs_pages/electronics_section/electronics_theory/ElectricCurrentPage';
