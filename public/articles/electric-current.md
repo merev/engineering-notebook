@@ -1,6 +1,8 @@
 ---
 
-*Electric current* is the total charge that passes through a cross-sectional area *A* per unit time. This cross-sectional area could represent a disk placed in a gas, plasma, or liquid. However, in electronics, this area is most frequently a slice through a solid material, such as a conductor.  
+*Electric current* is the total charge that passes through a cross-sectional area *A* per unit time. This cross-sectional area could represent a disk placed in a gas, plasma, or liquid. However, in electronics, this area is most frequently a slice through a solid material, such as a conductor.
+
+$10^3$
 
 If $\Delta Q$ is the amount of charge passing through an area in a time interval $\Delta t$, then the *average current* $I^{ave}$ is defined as:
 
