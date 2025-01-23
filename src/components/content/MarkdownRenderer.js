@@ -6,8 +6,10 @@ import './MarkdownRenderer.css';
 import 'katex/dist/katex.min.css';
 
 const MarkdownRenderer = ({ content }) => {
-  // Initialize Markdown-It with KaTeX and Container plugin
-  const md = new MarkdownIt()
+  // Initialize Markdown-It with KaTeX, Container plugin, and HTML enabled
+  const md = new MarkdownIt({
+    html: true, // Enable raw HTML
+  })
     .use(markdownItKatex)
     .use(markdownItContainer, 'columns', {
       render: (tokens, idx) => {

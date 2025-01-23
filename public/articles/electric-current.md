@@ -2,7 +2,8 @@
 ---
 *Electric current* is the total charge that passes through a cross-sectional area *A* per unit time. This cross-sectional area could represent a disk placed in a gas, plasma, or liquid. However, in electronics, this area is most frequently a slice through a solid material, such as a conductor.
 
-$10^3$
+$10$<sup>$3$</sup>
+
 
 If $\Delta Q$ is the amount of charge passing through an area in a time interval $\Delta t$, then the *average current* $I^{ave}$ is defined as:
 
@@ -33,7 +34,7 @@ $$
 $$
 
 
-To sound less nerdy, the term amp can be used in place of ampere. Because the ampere is a rather large unit, current is also expressed in milliamps (1 $mA$ = 1 × 10 − 3 $A$), micro-amps (1 μ$A$ = 1 × 10 − 6 $A$), and nanoamps ( 1 $nA$ = 1 × 10 − 9 $A$).
+To sound less nerdy, the term amp can be used in place of ampere. Because the ampere is a rather large unit, current is also expressed in milliamps (1 $mA$ = 1 × 10 − 3 $A$), micro-amps (1 $\mu A$ = 1 × 10 − 6 $A$), and nanoamps ( 1 $nA$ = 1 × 10 − 9 $A$).
 
 ## Current in Conductors
 
