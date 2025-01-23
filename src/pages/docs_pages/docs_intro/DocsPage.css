@@ -1,6 +1,7 @@
-.main-section {
-    margin: 20px 0px 0px 100px;
-    padding: 5px 0px 0px 0px;
+.docs-page {
+    background-color: #1B1B1D;
+    color: white;
+    margin-top: 50px;
 }
 
 .article-card {

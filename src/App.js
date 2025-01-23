@@ -1,4 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'katex/dist/katex.min.css';
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import { Col, Container, Row } from 'react-bootstrap';
@@ -18,11 +19,11 @@ function Layout() {
             <Container fluid className='docs-page'>
                 <Row>
                     {showSidebar && (
-                        <Col md={4} className='sidebar p-1'> {/* Adjusted column width */}
+                        <Col md={3} className='sidebar p-1'> {/* Adjusted column width */}
                             <Sidebar />
                         </Col>
                     )}
-                    <Col md={showSidebar ? 8 : 12} className="content"> {/* Adjusted column width */}
+                    <Col md={showSidebar ? 7 : 12} className="content"> {/* Adjusted column width */}
                         <Routes>
                             <Route exact path="/" element={<HomePage />} />
                             <Route path="/docs/intro" element={<DocsPage />} />

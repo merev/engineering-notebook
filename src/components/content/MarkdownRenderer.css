@@ -1,0 +1,12 @@
+.columns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .columns img {
+    /* max-width: 200px; */
+    /* height: auto; */
+    border-radius: 20px;
+  }
+  

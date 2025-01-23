@@ -15,5 +15,25 @@ html, body {
     display: flex;
     flex-direction: column;
     padding: 0px 0px 0px 0px;
-    flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+}
+
+.sidebar {
+    background-color: #1B1B1D;
+    color: white;
+    width: 20%; /* Adjust the width as needed */
+    max-width: 350px; /* Optional: set a maximum width */;
+    border-right: 1px solid #444444;
+    font-weight: bold;
+    overflow-y: auto;
+}
+
+.main-section {
+    background-color: #1B1B1D;
+    color: white;
+    width: 70%; /* Adjust the width as needed */
+    margin: 20px 0px 0px 100px;
+    padding: 5px 0px 0px 0px;
 }
