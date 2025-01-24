@@ -6,12 +6,6 @@
 
 }
 
-.article-image {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
 .article-content {
     font-size: 18px;
     margin-bottom: 40px;
@@ -60,13 +54,6 @@
 }
 
 
-
-
-.page-title {
-    font-size: 50px;
-    font-weight: bold;
-    margin: 0px 0px 20px 0px;
-}
 .children-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

@@ -1,5 +1,11 @@
+<div>
+<img src="/articles/electronics/theory/electric-current/main-image.png" alt="File Icon" style="width: 100%; border-radius: 10px; margin-bottom: 20px"/>
+</div>
+
+<h1 style="font-size: 50px; font-weight: bold">Electric Current</h1>
 
 ---
+
 *Electric current* refers to the amount of charge that flows through a cross-sectional area *A* over a given period of time. This cross-sectional area might represent a disk within a gas, plasma, or liquid. In electronics, however, it is typically a section cut through a solid material, such as a conductor.
 
 If $\Delta Q$ is the amount of charge passing through an area in a time interval $\Delta t$, then the *average current* $I$<sub>ave</sub> is defined as:
@@ -11,7 +17,7 @@ ${_{I^{ave} =}}^{\dfrac{\Delta Q}{\Delta t}}$
 
 $~~~~~~~~~~~~~~~~~~~~~~$
 
-![Electric Current Diagram](/articles/electric-current.png) $~~~~~~~~$
+![Electric Current Diagram](/articles/electronics/theory/electric-current/figure-one.png) $~~~~~~~~$
 :::
 
 ***Figure 1***
@@ -75,7 +81,7 @@ In summary, while conventional current assumes positive charge flow, in reality,
 
 ::: columns
 
-![Electric Current Diagram](/articles/electric-current-2.png) $~~~~~~~~$
+![Electric Current Diagram](/articles/electronics/theory/electric-current/figure-two.png) $~~~~~~~~$
 
 $$
 {_{I^{ave} =}}^{\dfrac{\Delta Q}{\Delta t}} {_{=}} ^{\dfrac{6 \text{C}}{3 \text{s}}} {_{=}}_{2 \text{A}}

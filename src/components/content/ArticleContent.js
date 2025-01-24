@@ -37,7 +37,7 @@ export const ArticleContent = () => {
     // Fetch Markdown content from the local file system
     useEffect(() => {
         if (currentArticle) {
-            const localFilePath = `/articles/${currentArticle.title.toLowerCase().replace(/ /g, '-')}.md`;
+            const localFilePath = `/articles/${currentSection.title.toLowerCase().replace(/ /g, '-')}/${currentTopic.title.toLowerCase().replace(/ /g, '-')}/${currentArticle.title.toLowerCase().replace(/ /g, '-')}/content.md`;
 
             fetch(localFilePath)
                 .then(response => {
@@ -73,8 +73,6 @@ export const ArticleContent = () => {
                     <span className="arrows"> › </span>
                     <span className="current-page">{currentArticle.title}</span>
                 </div>
-                <img src="/images/docs_pages/electronics/electric-current-image.png" alt="File Icon" className="article-image" />
-                <Card.Title className="page-title">{currentArticle.title}</Card.Title>
                 <main className="article-content">
                     {error ? (
                         <p className="error-message">{error}</p>
