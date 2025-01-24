@@ -93,7 +93,7 @@ $$
 One electron has a charge of $1.6 \times 10$<sup>$−19$</sup> $\text{C}$, so $6 \text{C}$ worth of electrons is:
 
 ::: columns
-$\# \text{Electrons} = 6 \text{C}/{1.602 \times 10}$<sup>$-19$</sup> $\text{C} = 3.74 \times 10$<sup>$19$</sup>
+\# $\text{Electrons} = 6 \text{C}/{1.602 \times 10}$<sup>$-19$</sup> $\text{C} = 3.74 \times 10$<sup>$19$</sup>
 :::
 
 &nbsp;
