@@ -1,5 +1,5 @@
 <div>
-<img src="/articles/electronics/theory/electric-current/main-image.png" alt="File Icon" style="width: 100%; border-radius: 10px; margin-bottom: 20px"/>
+<img src="/articles/electronics/theory/electric-current/main-image.png" alt="Main Image" style="width: 100%; border-radius: 10px; margin-bottom: 20px"/>
 </div>
 
 <h1 style="font-size: 50px; font-weight: bold">Electric Current</h1>
@@ -17,7 +17,7 @@ ${_{I^{ave} =}}^{\dfrac{\Delta Q}{\Delta t}}$
 
 $~~~~~~~~~~~~~~~~~~~~~~$
 
-![Electric Current Diagram](/articles/electronics/theory/electric-current/figure-one.png) $~~~~~~~~$
+![Figure One](/articles/electronics/theory/electric-current/figure-one.png) $~~~~~~~~$
 :::
 
 ***Figure 1***
@@ -81,7 +81,7 @@ In summary, while conventional current assumes positive charge flow, in reality,
 
 ::: columns
 
-![Electric Current Diagram](/articles/electronics/theory/electric-current/figure-two.png) $~~~~~~~~$
+![Figure Two](/articles/electronics/theory/electric-current/figure-two.png) $~~~~~~~~$
 
 $$
 {_{I^{ave} =}}^{\dfrac{\Delta Q}{\Delta t}} {_{=}} ^{\dfrac{6 \text{C}}{3 \text{s}}} {_{=}}_{2 \text{A}}
