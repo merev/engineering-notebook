@@ -7,7 +7,6 @@
     background-color: #1B1B1D;
     color: #E0E0E0;
     border: none;
-    padding: 5px 0px;
 }
 
 .sidebar-element {
@@ -16,7 +15,6 @@
     margin: 5px 0px 0px 0px;
     padding: 0px 0px;
     border: none;
-
 }
 
 .sidebar-selected {

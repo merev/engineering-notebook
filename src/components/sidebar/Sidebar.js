@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Button, Card, Collapse, Nav } from 'react-bootstrap';
 import { Link, useLocation } from 'react-router-dom';
@@ -11,6 +12,9 @@ const Sidebar = () => {
     const currentPath = location.pathname;
 
     useEffect(() => {
+        // Scroll to top when the path changes
+        window.scrollTo(0, 0);
+        
         // Function to expand sections and topics based on the currentPath
         const initializeOpenStates = () => {
             const newOpenSections = {};
