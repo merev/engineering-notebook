@@ -2,7 +2,7 @@
 <img src="/articles/electronics/theory/voltage/main-image.png" alt="Main Image" style="width: 100%; border-radius: 10px; margin-bottom: 20px"/>
 </div>
 
-<h1 style="font-size: 50px; font-weight: bold">A Microscopic View ov Conduction</h1>
+<h1 style="font-size: 50px; font-weight: bold">A Microscopic View of Conduction</h1>
 
 ---
 
