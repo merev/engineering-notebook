@@ -4,7 +4,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import { Col, Container, Row } from 'react-bootstrap';
 import { Header, Footer, Sidebar } from './components';
-import { HomePage, DocsPage, SearchPage, ElectronicsSectionPage, KubernetesSectionPage, LinuxSectionPage, DevOpsSectionPage, ElectronicsTheoryPage, ElectricCurrentPage } from './pages';
+import { HomePage, DocsIntroPage, SearchPage, DocsSectionPage, DocsTopicPage, DocsArticlePage } from './pages';
 import './App.css';
 
 function Layout() {
@@ -26,13 +26,10 @@ function Layout() {
                     <Col md={showSidebar ? 7 : 12} className="content"> {/* Adjusted column width */}
                         <Routes>
                             <Route exact path="/" element={<HomePage />} />
-                            <Route path="/docs/intro" element={<DocsPage />} />
-                            <Route path="/docs/electronics" element={<ElectronicsSectionPage />} />
-                            <Route path="/docs/electronics/theory" element={<ElectronicsTheoryPage />} />
-                            <Route path="/docs/electronics/theory/electric-current" element={<ElectricCurrentPage />} />
-                            <Route path="/docs/kubernetes" element={<KubernetesSectionPage />} />
-                            <Route path="/docs/linux" element={<LinuxSectionPage />} />
-                            <Route path="/docs/devops" element={<DevOpsSectionPage />} />
+                            <Route path="/docs/intro" element={<DocsIntroPage />} />
+                            <Route path="/docs/:word" element={<DocsSectionPage />} />
+                            <Route path="/docs/:word1/:word2" element={<DocsTopicPage />} />
+                            <Route path="/docs/:word1/:word2/:word3" element={<DocsArticlePage />} />
                             <Route path="/search" element={<SearchPage />} />
                         </Routes>
                     </Col>

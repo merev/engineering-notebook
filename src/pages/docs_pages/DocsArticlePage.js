@@ -1,9 +1,9 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import ArticleContent from '../../../../components/content/ArticleContent';
+import ArticleContent from '../../components/content/ArticleContent';
 
-const ElectricCurrentPage = () => {
+const DocsArticlePage = () => {
     return (
         <Container fluid className='main-section'>
             <ArticleContent />
@@ -11,4 +11,4 @@ const ElectricCurrentPage = () => {
     );
 };
 
-export default ElectricCurrentPage;
+export default DocsArticlePage;

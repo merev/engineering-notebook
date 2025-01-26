@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './DocsPage.css';
+import './DocsIntroPage.css';
 import { NavLink } from 'react-router-dom';
 
-const DocsPage = () => {
+const DocsIntroPage = () => {
 
     return (
         <Container fluid className='main-section'>
@@ -68,4 +68,4 @@ const DocsPage = () => {
     );
 };
 
-export default DocsPage;
+export default DocsIntroPage;

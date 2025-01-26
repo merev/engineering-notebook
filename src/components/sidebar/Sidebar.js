@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button, Card, Collapse, Nav } from 'react-bootstrap';
 import { Link, useLocation } from 'react-router-dom';
 import './Sidebar.css';
@@ -9,6 +9,51 @@ const Sidebar = () => {
     const [openTopics, setOpenTopics] = useState({});
     const location = useLocation();
     const currentPath = location.pathname;
+
+    useEffect(() => {
+        // Function to expand sections and topics based on the currentPath
+        const initializeOpenStates = () => {
+            const newOpenSections = {};
+            const newOpenTopics = {};
+
+            sections.forEach((section, sectionIndex) => {
+                const sectionPath = `/docs/${section.title.toLowerCase().replace(/[' ']/g, '-').replace(/[,']/g, '')}`;
+                const isSectionActive = section.topics.some((topic) => {
+                    const topicPath = `${sectionPath}/${topic.title
+                        .toLowerCase()
+                        .replace(/[' ']/g, '-')
+                        .replace(/[,']/g, '')}`;
+
+                    const isTopicActive = currentPath.startsWith(topicPath);
+                    const isArticleActive = topic.articles.some((article) =>
+                        currentPath.startsWith(
+                            `${topicPath}/${article.title
+                                .toLowerCase()
+                                .replace(/[' ']/g, '-')
+                                .replace(/[,']/g, '')}`
+                        )
+                    );
+
+                    // Expand the topic if active
+                    if (isTopicActive || isArticleActive) {
+                        newOpenTopics[`${sectionIndex}-${section.topics.indexOf(topic)}`] = true;
+                    }
+
+                    return isTopicActive || isArticleActive;
+                });
+
+                // Expand the section if any topic or article within it is active
+                if (isSectionActive) {
+                    newOpenSections[sectionIndex] = true;
+                }
+            });
+
+            setOpenSections(newOpenSections);
+            setOpenTopics(newOpenTopics);
+        };
+
+        initializeOpenStates();
+    }, [currentPath]);
 
     const toggleSection = (sectionIndex) => {
         setOpenSections((prev) => ({
@@ -24,8 +69,6 @@ const Sidebar = () => {
         }));
     };
 
-    // Determine if a topic or article is active
-    const isTopicActive = (topicPath) => currentPath === topicPath;
     const isArticleActive = (articlePath) => currentPath === articlePath;
 
     return (
@@ -45,24 +88,11 @@ const Sidebar = () => {
 
             {/* Sections */}
             {sections.map((section, sectionIndex) => {
-                const sectionPath = `/docs/${section.title.toLowerCase().replace(/[' ']/g, '-')}`;
-                const isSectionActive = section.topics.some((topic) => {
-                    const topicPath = `${sectionPath}/${topic.title
-                        .toLowerCase()
-                        .replace(/[' ']/g, '-')}`;
-                    return (
-                        currentPath.startsWith(topicPath) ||
-                        topic.articles.some((article) =>
-                            currentPath.startsWith(
-                                `${topicPath}/${article.title.toLowerCase().replace(/[' ']/g, '-')}`
-                            )
-                        )
-                    );
-                });
+                const sectionPath = `/docs/${section.title.toLowerCase().replace(/[' ']/g, '-').replace(/[,']/g, '')}`;
+                const isSectionActive = openSections[sectionIndex];
 
                 return (
                     <div key={sectionIndex}>
-                        {/* Section */}
                         <Card
                             className={`${
                                 isSectionActive && currentPath !== sectionPath
@@ -96,25 +126,14 @@ const Sidebar = () => {
                                 {section.topics.map((topic, topicIndex) => {
                                     const topicPath = `${sectionPath}/${topic.title
                                         .toLowerCase()
-                                        .replace(/[' ']/g, '-')}`;
-                                    const isTopicActiveState = isTopicActive(topicPath);
-                                    const isTopicOrArticleActive = topic.articles.some((article) => {
-                                        const articlePath = `${topicPath}/${article.title
-                                            .toLowerCase()
-                                            .replace(/[' ']/g, '-')}`;
-                                        return isArticleActive(articlePath);
-                                    });
+                                        .replace(/[' ']/g, '-')
+                                        .replace(/[,']/g, '')}`;
+                                    const isTopicActiveState = openTopics[`${sectionIndex}-${topicIndex}`];
 
                                     return (
                                         <div key={topicIndex}>
-                                            {/* Topic */}
                                             <Card
                                                 className={`${
-                                                    (isTopicActiveState || isTopicOrArticleActive) &&
-                                                    currentPath !== topicPath
-                                                        ? 'sidebar-parent'
-                                                        : ''
-                                                } ${
                                                     isTopicActiveState
                                                         ? 'sidebar-selected'
                                                         : ''
@@ -150,14 +169,14 @@ const Sidebar = () => {
                                                     {topic.articles.map((article, articleIndex) => {
                                                         const articlePath = `${topicPath}/${article.title
                                                             .toLowerCase()
-                                                            .replace(/[' ']/g, '-')}`;
+                                                            .replace(/[' ']/g, '-')
+                                                            .replace(/[',']/g, '')}`;
                                                         const isArticleActiveState = isArticleActive(
                                                             articlePath
                                                         );
 
                                                         return (
                                                             <div key={articleIndex}>
-                                                                {/* Article */}
                                                                 <Nav.Link as={Link} to={article.link}>
                                                                     <Card
                                                                         className={`${
